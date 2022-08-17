@@ -1,0 +1,30 @@
+.gridContainer{
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.flag{
+    width:100%;
+    height: 200px;
+   
+}
+
+.flag img{
+    overflow: hidden;
+   width: 100%;
+height: 100%;
+}
+
+.countryDescriptions{
+    padding: 1rem 0 2rem 2rem;
+}
+
+.countryDescriptions h4{
+    padding: 1rem 0;
+}
