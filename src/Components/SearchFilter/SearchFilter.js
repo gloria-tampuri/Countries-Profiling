@@ -11,7 +11,7 @@ const SearchFilter = ({onSearch, onSelect}) => {
    useEffect(()=>{
     onSearch(enteredSearch)
     onSelect(region)
-   },[enteredSearch,region])
+   },[enteredSearch,region,onSearch,onSelect ])
   
    const onSearchHandler=async(e)=>{
     setEnteredSearch(e.target.value)

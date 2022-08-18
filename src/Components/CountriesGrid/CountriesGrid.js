@@ -1,5 +1,4 @@
-import React, {useState,useEffect} from 'react'
-import { getAllCountries } from '../../Data/apis'
+import { Link } from "react-router-dom";
 import classes from './CountriesGrid.module.css'
 
 
@@ -8,7 +7,8 @@ const CountriesGrid = ({countries}) => {
 
   return (
     <div className={classes.gridContainer}>
-       {countries && countries.map((country)=><div className={classes.card} key={country.name.official}>
+       {countries && countries.map((country)=> <Link to='/country'  key={country.name.official}>
+        <div className={classes.card}>
             <div className={classes.flag}>
                 <img src={country.flags.svg} alt={country.name.official}/>
             </div>
@@ -18,7 +18,9 @@ const CountriesGrid = ({countries}) => {
                 <p>Region:{country.region}</p>
                 <p>Capital:{country.capital ? country.capital[0] : country.name.official }</p>
              </div>
-        </div>) }
+        </div>
+       
+       </Link>) }
     </div>
   )
 }

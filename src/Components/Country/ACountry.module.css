@@ -1,0 +1,38 @@
+.page{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.backButton{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 3rem;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.profile{
+    margin-top: 5rem;
+    display:flex;
+   justify-content: space-between;
+}
+
+.flag{
+    width:25rem;
+    height: 20rem;
+    background-color: white;
+}
+
+.details{
+    margin-top: 2rem;
+}
+
+.dets{
+    margin-top: 3rem;
+    display: flex;
+     gap: 10rem;
+     font-size: 0.8rem;
+}
+
