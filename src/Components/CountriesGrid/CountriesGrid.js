@@ -7,7 +7,7 @@ const CountriesGrid = ({countries}) => {
 
   return (
     <div className={classes.gridContainer}>
-       {countries && countries.map((country)=> <Link to='/country'  key={country.name.official}>
+       {countries && countries.map((country)=> <Link to={`/${country.name.common}`}  key={country.name.official}>
         <div className={classes.card}>
             <div className={classes.flag}>
                 <img src={country.flags.svg} alt={country.name.official}/>

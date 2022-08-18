@@ -21,18 +21,41 @@
 
 .flag{
     width:25rem;
-    height: 20rem;
+    height: 15rem;
     background-color: white;
+}
+.flag img{
+width: 100%;
+height: 100%;
 }
 
 .details{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .dets{
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
      gap: 10rem;
      font-size: 0.8rem;
+}
+
+.borders{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.borders ul{
+    display: flex;
+    gap:1rem
+}
+
+.borders ul li{
+list-style: none;
+ padding: 0.2rem 2rem;
+ box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+ flex-wrap: wrap;
 }
 

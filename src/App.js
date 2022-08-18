@@ -18,9 +18,7 @@ function App() {
        <Header/>
       <Routes>
           <Route path='/' element={<Home/>}/>
-             <Route path='/country' element={<Country/>}/>
-          
-         
+          <Route path='/:countryName' element={<Country/>}/>
       </Routes>
    </BrowserRouter>
   );
