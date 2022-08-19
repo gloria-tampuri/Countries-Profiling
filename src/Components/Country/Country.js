@@ -30,9 +30,11 @@ if(country === null || country === undefined || country.length < 1){
   return <Spinner />
 }
 
+console.log(country);
+
   return (
     <div className={classes.page}>
-      <Link to='/'>
+      <Link to='/'  style={{ textDecoration: 'none'}}>
         <div className={classes.backButton}>
           <div><BiArrowBack /></div>
           <h4>Back</h4>
@@ -57,16 +59,16 @@ if(country === null || country === undefined || country.length < 1){
                 </div>
 
                 <div>
-                  <p>Independent : <span>{country.independent}</span></p>
+                  <p>Independent : <span>{country.independent ? 'True' : 'False'}</span></p>
                   <p>Fifa : <span>{country.fifa}</span></p>
-                  <p>Landlocked : <span>{country.landlocked}</span></p>
+                  <p>Landlocked : <span>{country.landlocked ? 'True' : 'False'}</span></p>
                 </div>
             </div>
 
             <div className={classes.borders}> 
             <h4>Border Countries: </h4>
             <ul>
-              {country.borders.map((border)=><li key={border}>{border}</li>)}
+              {country.borders.map((border)=><li key={border}> {border}</li>)}
             </ul>
             </div>
          </div>

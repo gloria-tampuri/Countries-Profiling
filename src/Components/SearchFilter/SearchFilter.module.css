@@ -12,7 +12,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    background-color:var(--very-dark-blueDM);
+    /* background-color:var(--very-dark-blueDM); */
     box-shadow: 1px 1px 15px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
@@ -21,13 +21,17 @@
 .searchdiv input{
     width: 20rem;
     height: 3rem;
-    background-color:var(--very-dark-blueDM);
+    /* background-color:var(--very-dark-blueDM); */
+    background-color: inherit;
+    color: inherit;
     outline: none;
     border: transparent;
 }
 
 .filterdiv select{
-    background-color: var(--very-dark-blueDM);
+    /* background-color: var(--very-dark-blueDM); */
+    background-color: inherit;
+    color: inherit;
     height:3rem ;
     width: 10rem;
     padding: 0.5rem 2rem;
@@ -35,4 +39,17 @@
    border: none;
    box-shadow: 1px 1px 15px rgba(0,0,0,0.3);
    border-radius: 10px;
+}
+
+
+@media (max-width: 768px){
+    .searchfilter{
+        width: 95%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .searchdiv{
+        width: 100%;
+    }
 }

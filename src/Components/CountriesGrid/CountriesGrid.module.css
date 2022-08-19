@@ -5,7 +5,9 @@
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
+.gridContainer Link{
+    text-decoration: none;
+}
 .card{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
@@ -20,11 +22,25 @@
    width: 100%;
 height: 100%;
 }
-
+.link{
+    text-decoration: none;
+    color: inherit;
+    /* color: ; */
+}
 .countryDescriptions{
     padding: 1rem 0 2rem 2rem;
+    text-decoration: none;
 }
 
 .countryDescriptions h4{
     padding: 1rem 0;
+    text-decoration: none;
 }
+
+
+@media (max-width: 768px) {
+.gridContainer{
+    width: 95%;
+}
+
+ }

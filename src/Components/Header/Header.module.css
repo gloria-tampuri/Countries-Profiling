@@ -1,5 +1,4 @@
 .header{
-   background-color:var(--very-dark-blueDM);
    padding: 1.5rem 0;
    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.4);
 }
@@ -11,10 +10,24 @@
     justify-content: space-between;
 }
 
+/* .forpad h1{
+font-size: 1.2rem;
+} */
+
 .darkcontrol{
     display: flex;
     align-items: center;
     justify-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
+@media (max-width: 768px){
+.forpad{
+    width: 95%;
+}
+
+.forpad h1{
+    font-size: 1.5rem;
+}
+}

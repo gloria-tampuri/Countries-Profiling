@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--white);
+  
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -26,7 +26,8 @@ font-family: 'Open Sans', sans-serif;
 }
 body {
 line-height: 1.5;
-background-color: var( --dark-blue);
+/* background-color: var( --dark-blue); */
+/* color: var(--white); */
 -webkit-font-smoothing: antialiased;
 }
 img, picture, video, canvas, svg {
@@ -38,4 +39,16 @@ font: inherit;
 }
 p, h1, h2, h3, h4, h5, h6 {
 overflow-wrap: break-word;
+}
+
+.dark{
+  background-color: var(--dark-blue);
+  color: white;
+  min-height: 100vh;
+}
+
+.white{
+  background-color: white;
+  color: var(--dark-blue);
+  min-height: 100vh;
 }

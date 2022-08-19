@@ -14,15 +14,17 @@
 }
 
 .profile{
+    /* width: 100%; */
     margin-top: 5rem;
     display:flex;
+    gap: 3rem;
    justify-content: space-between;
 }
 
 .flag{
-    width:25rem;
-    height: 15rem;
-    background-color: white;
+    /* width:35rem;
+    height: 15rem; */
+   
 }
 .flag img{
 width: 100%;
@@ -30,32 +32,58 @@ height: 100%;
 }
 
 .details{
+    
     margin-top: 1rem;
 }
 
 .dets{
     margin-top: 1rem;
     display: flex;
-     gap: 10rem;
-     font-size: 0.8rem;
+     gap: 4rem;
+     font-size:1rem;
+     font-weight: 600;
 }
-
+.dets p span{
+    font-weight: 400;
+}
 .borders{
     margin-top: 2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+.borders h4{
+    flex-shrink: 0;
+    align-self: start;
+}
 
 .borders ul{
     display: flex;
-    gap:1rem
+    gap:1rem;
+    flex-wrap: wrap;
+    
 }
 
 .borders ul li{
+ 
 list-style: none;
  padding: 0.2rem 2rem;
  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
- flex-wrap: wrap;
+ 
 }
 
+@media (max-width: 768px) {
+    .page{
+        width: 95%;
+    }
+
+    .profile{
+        flex-direction: column;
+       
+    }
+
+    .dets{
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}
